@@ -35,5 +35,5 @@ test: lint
 	$(POETRY_PYTEST) tests/
 
 run:
-	$(POETRY_PYTHON) main.py
+	$(POETRY_PYTHON) src/main.py
 
