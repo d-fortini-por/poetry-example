@@ -7,7 +7,7 @@
 
 PROJECT_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 PROFILE = default
-PROJECT_NAME = etapbp-predictor
+PROJECT_NAME = poetry-example
 PYTHON_INTERPRETER = python3
 
 # Alias python paths
@@ -23,6 +23,9 @@ POETRY_LINTER := poetry run flake8
 setup:
 	$(PYTHON_INTERPRETER) -m pip install  --upgrade pip
 	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+	brew install pyenv
+	pyenv install 3.7.2
+	pyenv local 3.7.2
 	poetry update
 	poetry install
 
