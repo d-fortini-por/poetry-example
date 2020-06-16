@@ -3,8 +3,8 @@
 You need:
 1. Type the following in your terminal
 ```
- export PATH="$HOME/.poetry/bin:$PATH"
- ```
+export PATH="$HOME/.poetry/bin:$PATH"
+```
 
 To install dependencies
 ```
