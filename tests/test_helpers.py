@@ -1,6 +1,6 @@
 from src.helpers import get_true
 import pandas as pd
-# import numpy as np
+import numpy as np
 
 
 def test_pandas():

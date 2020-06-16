@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "src-pbp"
+name = "src"
 version = "0.1.0"
 description = ""
 authors = ["david-fortini-por <d.fortini@portofrotterdam.com>"]
