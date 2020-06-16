@@ -22,18 +22,18 @@ POETRY_LINTER := poetry run flake8
 
 setup:
 	$(PYTHON_INTERPRETER) -m pip install  --upgrade pip
-	bash install_pyenv.sh
+	bash shell_scripts/install_pyenv.sh
 	pyenv install 3.7.4
 	pyenv local 3.7.4
-	curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+	bash shell_scripts/install_poetry.sh
 	poetry update
 	poetry install
 
-# training_code is code used for the ML model that had too many false
-# positives. It is not actively used in the current implementation.
+
 lint:
 	$(POETRY_LINTER) .
 
+# test (requires) lint
 test: lint
 	$(POETRY_PYTEST) tests/
 
