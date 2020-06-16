@@ -5,6 +5,9 @@ You need:
 ```
 export PATH="$HOME/.poetry/bin:$PATH"
 ```
+or even better, put in your `.bashrc/ .zshrc` file, so that it stays permanently
+
+
 
 To install dependencies
 ```
